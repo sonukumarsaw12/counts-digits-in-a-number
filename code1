@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int countDigit(int n){
+    int count = 0;
+    
+    while(n>0){
+        count +=1;
+        n = n/10;
+    }
+    return count;
+}
+
+int main(){
+    int N;
+    cout<<"Enter Number: ";
+    cin>>N;
+    
+    int digits = countDigit(N);
+    cout<<"Number of digits in N: "<<digits<<endl;
+    return 0;
+}
+
